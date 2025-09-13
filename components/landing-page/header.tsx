@@ -1,6 +1,4 @@
 "use client";
-
-import Image from "next/image";
 import Link from "next/link";
 
 export const Header = () => (
@@ -34,6 +32,12 @@ export const Header = () => (
           className="text-gray-600 hover:text-indigo-600 text-base font-medium"
         >
           Create
+        </Link>
+        <Link
+          href="/prompt-beautifier"
+          className="text-gray-600 hover:text-indigo-600 text-base font-medium"
+        >
+          Prompt Beautifier
         </Link>
       </div>
       <div className="flex items-center gap-4">
