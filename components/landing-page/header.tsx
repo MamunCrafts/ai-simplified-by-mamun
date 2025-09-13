@@ -48,10 +48,12 @@ export const Header = () => {
           </Link>
         </div>
         <div className="flex items-center gap-4">
-          <button className="rounded-xl h-11 px-5 bg-gray-200 text-base font-bold hover:bg-gray-300 transition-colors">
+          <button onClick={()=>{router.push("/auth/login")}} className="rounded-xl hover:cursor-pointer h-11 px-5 bg-gray-200 text-base font-bold hover:bg-gray-300 transition-colors">
             Log in
           </button>
-          <button className="rounded-xl h-11 px-5 bg-indigo-600 text-white text-base font-bold hover:bg-indigo-700 transition-colors">
+          <button onClick={()=>{
+            router.push('/auth/sign-up')
+          }} className="rounded-xl h-11 hover:cursor-pointer px-5 bg-indigo-600 text-white text-base font-bold hover:bg-indigo-700 transition-colors">
             Sign up
           </button>
         </div>
